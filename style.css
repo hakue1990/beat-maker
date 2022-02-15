@@ -36,6 +36,7 @@ svg {
   height: 80px;
   margin: 16px 8px;
   cursor: pointer;
+  border-radius: 50%;
 }
 .kick-pad {
   background-color: #cb9cf2;
@@ -48,14 +49,14 @@ svg {
 }
 .kick-track,
 .snare-track,
-.hithat-track {
+.hihat-track {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .kick,
 .snare,
-.hithat {
+.hihat {
   display: flex;
 }
 #hihat-select,
@@ -90,4 +91,15 @@ svg {
   position: absolute;
   right: 15px;
   bottom: 15px;
+}
+.active {
+  transform: scale(1.1);
+}
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
 }
