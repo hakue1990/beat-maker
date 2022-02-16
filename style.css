@@ -94,6 +94,15 @@ svg {
 }
 .active {
   transform: scale(1.1);
+  background-color: #d8e1ff;
+}
+.tempo {
+  margin-top: 30px;
+  text-align: center;
+}
+.tempo input {
+  width: 300px;
+  color: red;
 }
 @keyframes playTrack {
   from {
